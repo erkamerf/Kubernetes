@@ -7,10 +7,10 @@ conserveshadows = false
 --Display related settings.
 state.DisplayMode = M(true, 'Display Mode') --Set this to false if you don't want to display modes at the bottom of your screen.
 --Uncomment the settings below and change the values to edit the display's look.
---displayx = 3
---displayy = 1062
+displayx = 1000
+displayy = 1331
 --displayfont = 'Arial'
---displaysize = 12
+displaysize = 11
 --displaybold = true
 --displaybg = 0
 --displaystroke = 2
