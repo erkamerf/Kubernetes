@@ -7,8 +7,6 @@ function user_job_setup()
 	state.IdleMode:options('Normal', 'PDT')
 	state.Weapons:options('Default','DualWeapons','DualSavageWeapons','DualEviscerationWeapons','DualMagicWeapons','DualMalevolence')
 	
-	--Ikenga_vest_bonus = 190  -- It is 190 at R20. Uncomment if you need to manually adjust because you are using below R20
-	
 	WeaponType =  {['Fail-Not'] = "Bow",
                    ['Fomalhaut'] = "Gun",
 				   ['Ataktos'] = "Gun",
@@ -55,7 +53,7 @@ function user_job_setup()
 	send_command('bind !r gs c weapons MagicWeapons;gs c update')
 	send_command('bind ^q gs c weapons SingleWeapon;gs c update')
 	
-	select_default_macro_book()
+	--select_default_macro_book()
 
 end
 
@@ -90,12 +88,12 @@ function init_gear_sets()
 	-- Ranged sets (snapshot)
 	
 	sets.precast.RA = {
-		head="Amini Gapette +1", --7
-		body="Amini Caban +1",hands="Carmine Fin. Ga. +1",ring1="Crepuscular Ring", --11
-		back=gear.snapshot_jse_back,waist="Impulse Belt",legs="Orion Braccae +3",feet="Meg. Jam. +2"} --38
+		head="Amini Gapette +1",
+		body="Amini Caban +1",hands="Carmine Fin. Ga. +1",
+		back=gear.snapshot_jse_back,waist="Impulse Belt",legs="Orion Braccae +3",feet="Meg. Jam. +2"}
 		
 	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {})
-	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {head="Orion Beret +3",waist="Yemaya Belt",legs="Adhemar Kecks +1"})
+	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {head="Orion Beret +3",waist="Yemaya Belt"})
 
 
 	-- Weaponskill sets
@@ -157,17 +155,17 @@ function init_gear_sets()
 
     sets.midcast.RA = {
         head="Malignance Chapeau",neck="Iskur Gorget",ear1="Enervating Earring",ear2="Telos Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Ilabrat Ring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Regal Ring",ring2="Dingir Ring",
         back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Malignance Tights",feet="Malignance Boots"}
 	
     sets.midcast.RA.Acc = {
         head="Malignance Chapeau",neck="Iskur Gorget",ear1="Enervating Earring",ear2="Telos Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Regal Ring",ring2="Ilabrat Ring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Regal Ring",ring2="Dingir Ring",
         back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Malignance Tights",feet="Malignance Boots"}
 		
     sets.midcast.RA.Fodder = {
         head="Malignance Chapeau",neck="Iskur Gorget",ear1="Dedition Earring",ear2="Telos Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Ilabrat Ring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Ilabrat Ring",ring2="Rajas Ring",
         back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Malignance Tights",feet="Malignance Boots"}
 		
 	--These sets will overlay based on accuracy level, regardless of other options.
@@ -217,7 +215,6 @@ function init_gear_sets()
     sets.Kiting = {legs="Carmine Cuisses +1"}
 	sets.DayIdle = {}
 	sets.NightIdle = {}
-	sets.BulletPouch = {waist="Chr. Bul. Pouch"}
 	
 	-- Weapons sets
 	sets.weapons.Default = {main="Kustawi +1",sub="Nusku Shield",range="Fomalhaut"}
@@ -274,14 +271,14 @@ function init_gear_sets()
 end
 
 -- Select default macro book on initial load or subjob change.
-function select_default_macro_book()
-    if player.sub_job == 'NIN' then
-        set_macro_page(1, 19)
-    elseif player.sub_job == 'DNC' then
-		set_macro_page(1, 19)
-    elseif player.sub_job == 'DRG' then
-        set_macro_page(3, 19)
-    else
-        set_macro_page(1, 19)
-    end
-end
+ function select_default_macro_book()
+     if player.sub_job == 'NIN' then
+         set_macro_page(1, 19)
+     elseif player.sub_job == 'DNC' then
+		 set_macro_page(1, 19)
+     elseif player.sub_job == 'DRG' then
+         set_macro_page(3, 19)
+     else
+         set_macro_page(1, 19)
+     end
+ end
