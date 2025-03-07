@@ -58,7 +58,7 @@ function init_gear_sets()
     legs={ name="Herculean Trousers", augments={'AGI+1','"Dbl.Atk."+2','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+3 "Mag.Atk.Bns."+3',}},
     feet="Skulk. Poulaines"}
     sets.ExtraRegen = {}
-    sets.Kiting = {feet="Jute Boots +1"}
+    sets.Kiting = {feet="Strider Boots"}
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {head="Frenzy Sallet"}
@@ -315,19 +315,21 @@ function init_gear_sets()
     --------------------------------------
 
     -- Normal melee group
-    sets.engaged = {ammo="Aurgelmir Orb +1",
-                    head="Nyame Helm",
-                    body="Nyame Mail",
-                    hands="Nyame Gauntlets",
-                    legs="Nyame Flanchard",
-                    feet="Nyame Sollerets",
-                    neck="Asperity Necklace",
-                    waist="Sarissapho. Belt",
-                    left_ear="Sherida Earring",
-                    right_ear="Skulker's Earring",
-                    left_ring="Epona's Ring",
-                    right_ring="Petrov Ring",
-                    back="Bleating Mantle",}
+    sets.engaged = {    main="Tauret",
+    sub="Rhadamanthus",
+    ammo="Aqreqaq Bomblet",
+    head="Mummu Bonnet +2",
+    body="Mummu Jacket +2",
+    hands="Mummu Wrists +2",
+    legs="Meg. Chausses +2",
+    feet="Mummu Gamash. +2",
+    neck="Bird Whistle",
+    waist="Paewr Belt",
+    left_ear="Phawaylla Earring",
+    right_ear="Odr Earring",
+    left_ring="Defending Ring",
+    right_ring="Mummu Ring",
+    back="Canny Cape",}
 		
     sets.engaged.SomeAcc = {ammo="Aurgelmir Orb +1",
         head="Dampening Tam",neck="Erudit. Necklace",ear1="Brutal Earring",ear2="Mache Earring +1",
