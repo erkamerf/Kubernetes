@@ -10,7 +10,7 @@ function user_job_setup()
 	state.MagicalDefenseMode:options('MDT') --F11 to lock in, cntrl+F11 to cycle
 	state.ResistDefenseMode:options('MEVA') --cntrl+F12
 		-- alt+F12 to turn off the PDT or MDT set!
-	state.Weapons:options('Aeneas','Savage','Evisceration','Throwing','SwordThrowing','Gun')
+	state.Weapons:options('Aeneas','Savage','Evisceration','Throwing','SwordThrowing','Gun','Trashweapons')
 		--F9 to cycle weapon sets
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWMax','Parry'} --alt+F11
 	state.AmbushMode = M(false, 'Ambush Mode') --windows+F10
@@ -58,7 +58,7 @@ function init_gear_sets()
     legs={ name="Herculean Trousers", augments={'AGI+1','"Dbl.Atk."+2','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+3 "Mag.Atk.Bns."+3',}},
     feet="Skulk. Poulaines"}
     sets.ExtraRegen = {}
-    sets.Kiting = {feet="Strider Boots"}
+    sets.Kiting = {feet="Pillager's Poulaines"}
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {head="Frenzy Sallet"}
@@ -82,6 +82,7 @@ function init_gear_sets()
 	sets.weapons.Throwing = {main="Aeneas",sub="Shijo",range="Wingcutter",ammo=empty}
 	sets.weapons.SwordThrowing = {main="Naegling",sub="Tauret",range="Wingcutter",ammo=empty}
 	sets.weapons.Gun = {main="Aeneas",sub="Shijo",range="Silver Gun +1",ammo="Bronze Bullet"}
+    sets.weapons.Trashweapons = {main="Feline Hagoita +1"}
 	
     -- Actions we want to use to tag TH.
     sets.precast.Step = {ammo="C. Palug Stone",
@@ -279,10 +280,21 @@ function init_gear_sets()
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
-    sets.idle = {ammo="Staunch Tathlum +1",
-        head="Nyame Helm",body="Nyame Mail",hands="Nyame Gauntlets",legs="Nyame Flanchard",
-		feet="Jute Boots +1",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Defending Ring",ring2="Karieyh Ring +1",back="Archon Cape"}
+    sets.idle = {main="Tauret",
+        sub="Sandung",
+        ammo="Aqreqaq Bomblet",
+        head="Meghanada Visor +2",
+        body="Mekosu. Harness",
+        hands="Meg. Gloves +2",
+        legs="Meg. Chausses +2",
+        feet="Meg. Jam. +2",
+        neck="Bird Whistle",
+        waist="Paewr Belt",
+        left_ear="Hearty Earring",
+        right_ear="Odr Earring",
+        left_ring="Defending Ring",
+        right_ring="Archon Ring",
+        back="Archon Cape",}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
@@ -315,21 +327,21 @@ function init_gear_sets()
     --------------------------------------
 
     -- Normal melee group
-    sets.engaged = {    main="Tauret",
-    sub="Rhadamanthus",
-    ammo="Aqreqaq Bomblet",
-    head="Mummu Bonnet +2",
-    body="Mummu Jacket +2",
-    hands="Mummu Wrists +2",
-    legs="Meg. Chausses +2",
-    feet="Mummu Gamash. +2",
-    neck="Bird Whistle",
-    waist="Paewr Belt",
-    left_ear="Phawaylla Earring",
-    right_ear="Odr Earring",
-    left_ring="Defending Ring",
-    right_ring="Mummu Ring",
-    back="Canny Cape",}
+    sets.engaged = {main="Tauret",
+        sub="Rhadamanthus",
+        ammo="Aqreqaq Bomblet",
+        head="Mummu Bonnet +2",
+        body="Mummu Jacket +2",
+        hands="Mummu Wrists +2",
+        legs="Meg. Chausses +2",
+        feet="Mummu Gamash. +2",
+        neck="Bird Whistle",
+        waist="Paewr Belt",
+        left_ear="Phawaylla Earring",
+        right_ear="Odr Earring",
+        left_ring="Defending Ring",
+        right_ring="Mummu Ring",
+        back="Canny Cape",}
 		
     sets.engaged.SomeAcc = {ammo="Aurgelmir Orb +1",
         head="Dampening Tam",neck="Erudit. Necklace",ear1="Brutal Earring",ear2="Mache Earring +1",
