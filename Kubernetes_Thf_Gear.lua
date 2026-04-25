@@ -58,7 +58,7 @@ function init_gear_sets()
     legs={ name="Herculean Trousers", augments={'AGI+1','"Dbl.Atk."+2','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+3 "Mag.Atk.Bns."+3',}},
     feet="Skulk. Poulaines"}
     sets.ExtraRegen = {}
-    sets.Kiting = {feet="Pillager's Poulaines"}
+    sets.Kiting = {feet="Pill. Poulaines +3"}
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {head="Frenzy Sallet"}
@@ -73,7 +73,7 @@ function init_gear_sets()
 	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",body="Adhemar Jacket +1",hands="Floral Gauntlets",
 				ring1="Garuda Ring",waist="Reiki Yotai"}
 	sets.Parry = {hands="Turms Mittens +1",ring1="Defending Ring"}
-	sets.Ambush = {} --body="Plunderer's Vest +1"
+	sets.Ambush = {body="Plunderer's Vest +2"} 
 	
 	-- Weapons sets
 	sets.weapons.Aeneas = {main="Aeneas",sub="Shijo"}
@@ -103,16 +103,16 @@ function init_gear_sets()
     --------------------------------------
 
     -- Precast sets to enhance JAs
-    sets.precast.JA['Collaborator'] = {"Skulker's Bonnet"}
-    sets.precast.JA['Accomplice'] = {"Skulker's Bonnet"}
-    sets.precast.JA['Flee'] = {} --feet="Pillager's Poulaines +1"
-    sets.precast.JA['Hide'] = {body="Pillager's Vest +1"}
+    sets.precast.JA['Collaborator'] = {head="Skulker's Bonnet"}
+    sets.precast.JA['Accomplice'] = {head="Skulker's Bonnet"}
+    sets.precast.JA['Flee'] = {feet="Pill. Poulaines +3"}
+    sets.precast.JA['Hide'] = {body="Pillager's Vest +3"}
     sets.precast.JA['Conspirator'] = {body="Skulker's Vest"} 
-    sets.precast.JA['Steal'] = {hands="Pill. Armlets +1"}
+    sets.precast.JA['Steal'] = {hands="Pill. Armlets +3"}
 	sets.precast.JA['Mug'] = {}
     sets.precast.JA['Despoil'] = {legs="Skulker's Culottes",feet="Skulk. Poulaines"}
-    sets.precast.JA['Perfect Dodge'] = {hands="Plunderer's Armlets +1"}
-    sets.precast.JA['Feint'] = {} -- {legs="Assassin's Culottes +2"}
+    sets.precast.JA['Perfect Dodge'] = {hands="Plun. Armlets +2"}
+    sets.precast.JA['Feint'] = {legs="Plun. Culottes +2"}
 
     sets.precast.JA['Sneak Attack'] = sets.buff['Sneak Attack']
     sets.precast.JA['Trick Attack'] = sets.buff['Trick Attack']
@@ -280,21 +280,23 @@ function init_gear_sets()
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
-    sets.idle = {main="Tauret",
+    sets.idle = {    
+        main="Tauret",
         sub="Sandung",
         ammo="Aqreqaq Bomblet",
         head="Meghanada Visor +2",
         body="Mekosu. Harness",
-        hands="Meg. Gloves +2",
+        hands="SV Gauntlets +1",
         legs="Meg. Chausses +2",
-        feet="Meg. Jam. +2",
+        feet="SV Gaiters +1",
         neck="Bird Whistle",
         waist="Paewr Belt",
         left_ear="Hearty Earring",
-        right_ear="Odr Earring",
+        right_ear="Phawaylla Earring",
         left_ring="Defending Ring",
         right_ring="Archon Ring",
-        back="Archon Cape",}
+        back="Archon Cape",
+    }
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
