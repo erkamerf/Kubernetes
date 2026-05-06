@@ -7,15 +7,17 @@ conserveshadows = true
 --Display related settings.
 state.DisplayMode = M(true, 'Display Mode') --Set this to false if you don't want to display modes at the bottom of your screen.
 --Uncomment the settings below and change the values to edit the display's look.
-displayx = 1000
-displayy = 1331
---displayfont = 'Arial'
-displaysize = 11
---displaybold = true
---displaybg = 0
---displaystroke = 2
---displaytransparancy = 192
---state.DisplayColors = {
+display.x = 1100
+display.y = 1331
+display.font = 'Arial'
+display.size = 11
+--display.bold = true
+--display.bg = 0
+--display.stroke = 2
+--display.transparancy = 192
+--display.colors = {}
+--display.labels = {}
+--state.DisplayColors = {THIS IS OLD, DO NOT USE
     -- h='\\cs(255, 0, 0)', -- Red for active booleans and non-default modals
     -- w='\\cs(255,255,255)', -- White for labels and default modals
     -- n='\\cs(192,192,192)', -- White for labels and default modals
