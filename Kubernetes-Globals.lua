@@ -46,6 +46,9 @@ state.NotifyBuffs	  		= M(false, 'Notify Buffs') 	 --Set this to true if you wan
 --send_command('bind !@^f7 gs c toggle AutoWSMode') --Turns auto-ws mode on and off.
 --send_command('bind !^f7 gs c toggle AutoFoodMode') --Turns auto-ws mode on and off.
 send_command('bind f7 input /console send @all /attack <bt>')
+send_command('bind pagedown input /console send @all //rmount')
+send_command('bind pageup input /console send @all /dismount') 
+send_command('bind end input /ma "Warp" <me>')
 send_command('bind f9 gs c cycle Weapons') --Cycle through weapons sets.
 --send_command('bind @f8 gs c toggle AutoNukeMode') --Turns auto-nuke mode on and off.
 --send_command('bind ^f8 gs c toggle AutoStunMode') --Turns auto-stun mode off and on.
