@@ -79,7 +79,7 @@ function init_gear_sets()
 	sets.weapons.Aeneas = {main="Aeneas",sub="Shijo"}
 	sets.weapons.Savage = {main="Naegling",sub="Aeneas"}
 	sets.weapons.Evisceration = {main="Tauret",sub="Air Knife"}
-	sets.weapons.Throwing = {main="Tauret",sub="Sandung",range="Bestas Bane",ammo=empty}
+	sets.weapons.Throwing = {main="Tauret",sub="Air Knife",range="Bestas Bane",ammo=empty}
 	sets.weapons.SwordThrowing = {main="Naegling",sub="Tauret",range="Bestas Bane",ammo=empty}
 	sets.weapons.Gun = {main="Aeneas",sub="Shijo",range="Silver Gun +1",ammo="Bronze Bullet"}
     sets.weapons.Trashweapons = {main="Feline Hagoita +1"}
