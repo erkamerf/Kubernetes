@@ -147,11 +147,11 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
         ammo="Aqreqaq Bomblet",
-        head="Plun. Bonnet +2",
+        head="Plun. Bonnet +3",
         body="Pillager's Vest +3",
         hands="Meg. Gloves +2",
         legs="SV Loincloth +1",
-        feet="Plun. Poulaines +3",
+        feet="Plun. Poulaines +4",
         neck="Sanctity Necklace",
         waist="Patentia Sash",
         left_ear="Sherida Earring",
@@ -336,7 +336,7 @@ function init_gear_sets()
         body="Volte Harness",
         hands="Mummu Wrists +2",
         legs="Pill. Culottes +3",
-        feet="Plun. Poulaines +3",
+        feet="Plun. Poulaines +4",
         neck="Sanctity Necklace",
         waist="Patentia Sash",
         left_ear="Sherida Earring",
