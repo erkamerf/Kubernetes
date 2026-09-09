@@ -108,7 +108,7 @@ function init_gear_sets()
     sets.precast.JA['Flee'] = {feet="Pill. Poulaines +3"}
     sets.precast.JA['Hide'] = {body="Pillager's Vest +3"}
     sets.precast.JA['Conspirator'] = {body="Skulker's Vest"} 
-    sets.precast.JA['Steal'] = {hands="Pill. Armlets +3"}
+    sets.precast.JA['Steal'] = {hands="Pill. Armlets +4"}
 	sets.precast.JA['Mug'] = {}
     sets.precast.JA['Despoil'] = {legs="Skulker's Culottes",feet="Skulk. Poulaines"}
     sets.precast.JA['Perfect Dodge'] = {hands="Plun. Armlets +4"}
@@ -213,12 +213,12 @@ function init_gear_sets()
         back="Ground. Mantle +1",waist="Olseni Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.precast.WS['Last Stand'] = {
-        head="Pill. Bonnet +3",neck="Fotia Gorget",ear1="Enervating Earring",ear2="Telos Earring",
+        head="Pill. Bonnet +4",neck="Fotia Gorget",ear1="Enervating Earring",ear2="Telos Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Apate Ring",ring2="Regal Ring",
         back=gear.wsd_jse_back,waist="Fotia Belt",legs="Malignance Tights",feet="Malignance Boots"}
 		
     sets.precast.WS['Empyreal Arrow'] = {
-        head="Pill. Bonnet +3",neck="Fotia Gorget",ear1="Enervating Earring",ear2="Telos Earring",
+        head="Pill. Bonnet +4",neck="Fotia Gorget",ear1="Enervating Earring",ear2="Telos Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Apate Ring",ring2="Regal Ring",
         back=gear.wsd_jse_back,waist="Fotia Belt",legs="Malignance Tights",feet="Malignance Boots"}
 		
@@ -351,12 +351,12 @@ function init_gear_sets()
         back=gear.da_jse_back,waist="Reiki Yotai",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
     
 	sets.engaged.Acc = {ammo="Seeth. Bomblet +1",
-        head="Pill. Bonnet +3",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Telos Earring",
+        head="Pill. Bonnet +4",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Telos Earring",
         body="Mummu Jacket +2",hands="Floral Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
         back=gear.da_jse_back,waist="Olseni Belt",legs="Pill. Culottes +3",feet="Malignance Boots"}
 		
     sets.engaged.FullAcc = {ammo="C. Palug Stone",
-        head="Pill. Bonnet +3",neck="Combatant's Torque",ear1="Odr Earring",ear2="Mache Earring +1",
+        head="Pill. Bonnet +4",neck="Combatant's Torque",ear1="Odr Earring",ear2="Mache Earring +1",
         body="Mummu Jacket +2",hands="Adhemar Wrist. +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
         back=gear.da_jse_back,waist="Olseni Belt",legs="Pill. Culottes +3",feet="Malignance Boots"}
 
