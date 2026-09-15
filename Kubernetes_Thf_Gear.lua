@@ -58,7 +58,7 @@ function init_gear_sets()
     legs={ name="Herculean Trousers", augments={'AGI+1','"Dbl.Atk."+2','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+3 "Mag.Atk.Bns."+3',}},
     feet="Skulk. Poulaines"}
     sets.ExtraRegen = {}
-    sets.Kiting = {feet="Pill. Poulaines +3"}
+    sets.Kiting = {feet="Pill. Poulaines +4"}
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {head="Frenzy Sallet"}
@@ -105,7 +105,7 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
     sets.precast.JA['Collaborator'] = {head="Skulker's Bonnet"}
     sets.precast.JA['Accomplice'] = {head="Skulker's Bonnet"}
-    sets.precast.JA['Flee'] = {feet="Pill. Poulaines +3"}
+    sets.precast.JA['Flee'] = {feet="Pill. Poulaines +4"}
     sets.precast.JA['Hide'] = {body="Pillager's Vest +3"}
     sets.precast.JA['Conspirator'] = {body="Skulker's Vest"} 
     sets.precast.JA['Steal'] = {hands="Pill. Armlets +4"}
