@@ -73,7 +73,7 @@ function init_gear_sets()
 	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",body="Adhemar Jacket +1",hands="Floral Gauntlets",
 				ring1="Garuda Ring",waist="Reiki Yotai"}
 	sets.Parry = {hands="Turms Mittens +1",ring1="Defending Ring"}
-	sets.Ambush = {body="Plunderer's Vest +2"} 
+	sets.Ambush = {body="Plunderer's Vest +3"} 
 	
 	-- Weapons sets
 	sets.weapons.Aeneas = {main="Aeneas",sub="Shijo"}
@@ -112,7 +112,7 @@ function init_gear_sets()
 	sets.precast.JA['Mug'] = {}
     sets.precast.JA['Despoil'] = {legs="Skulker's Culottes",feet="Skulk. Poulaines"}
     sets.precast.JA['Perfect Dodge'] = {hands="Plun. Armlets +4"}
-    sets.precast.JA['Feint'] = {legs="Plun. Culottes +2"}
+    sets.precast.JA['Feint'] = {legs="Plun. Culottes +3"}
 
     sets.precast.JA['Sneak Attack'] = sets.buff['Sneak Attack']
     sets.precast.JA['Trick Attack'] = sets.buff['Trick Attack']
