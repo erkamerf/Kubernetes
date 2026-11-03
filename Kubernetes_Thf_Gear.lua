@@ -15,8 +15,8 @@ function user_job_setup()
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWMax','Parry'} --alt+F11
 	state.AmbushMode = M(false, 'Ambush Mode') --windows+F10
 
-	gear.da_jse_back = {name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
-	gear.wsd_jse_back = {name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
+	gear.da_jse_back = {name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Attack+10','"Dbl.Atk."+10','Damage taken-5%',}}
+	gear.wsd_jse_back = {name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}}
 
     -- Additional local binds
     send_command('bind ^` input /ja "Flee" <me>')
@@ -56,7 +56,7 @@ function init_gear_sets()
     hands="Plun. Armlets +4",
     waist="Chaac Belt",
     legs="",
-    feet="Skulk. Poulaines"}
+    feet="Skulk. Poulaines +1"}
     sets.ExtraRegen = {}
     sets.Kiting = {feet="Pill. Poulaines +4"}
 
@@ -103,14 +103,14 @@ function init_gear_sets()
     --------------------------------------
 
     -- Precast sets to enhance JAs
-    sets.precast.JA['Collaborator'] = {head="Skulker's Bonnet"}
-    sets.precast.JA['Accomplice'] = {head="Skulker's Bonnet"}
+    sets.precast.JA['Collaborator'] = {head="Skulker's Bonnet +1"}
+    sets.precast.JA['Accomplice'] = {head="Skulker's Bonnet +1"}
     sets.precast.JA['Flee'] = {feet="Pill. Poulaines +4"}
     sets.precast.JA['Hide'] = {body="Pill. Vest +4"}
-    sets.precast.JA['Conspirator'] = {body="Skulker's Vest"} 
+    sets.precast.JA['Conspirator'] = {body="Skulker's Vest +1"} 
     sets.precast.JA['Steal'] = {hands="Pill. Armlets +4"}
 	sets.precast.JA['Mug'] = {}
-    sets.precast.JA['Despoil'] = {legs="Skulker's Culottes",feet="Skulk. Poulaines"}
+    sets.precast.JA['Despoil'] = {legs="Skulk. Culottes +1",feet="Skulk. Poulaines +1"}
     sets.precast.JA['Perfect Dodge'] = {hands="Plun. Armlets +4"}
     sets.precast.JA['Feint'] = {legs="Plun. Culottes +4"}
 
@@ -158,7 +158,7 @@ function init_gear_sets()
         right_ear="Kuwunga Earring",
         left_ring="Rajas Ring",
         right_ring="Epaminondas's Ring",
-        back="Null Shawl",}
+        back=gear.wsd_jse_back}
 		
     sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {neck="Erudit. Necklace"})
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {neck="Erudit. Necklace",ear1="Telos Earring",ear2="Cessance Earring",body="Meg. Cuirie +2",legs="Meg. Chausses +2",feet="Meg. Jam. +2"})
@@ -234,7 +234,7 @@ function init_gear_sets()
         right_ear="Odr Earring",
         left_ring="Rajas Ring",
         right_ring="Epaminondas's Ring",
-        back="Null Shawl",}
+        back=gear.wsd_jse_back}
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 
@@ -293,10 +293,10 @@ function init_gear_sets()
         neck="Sanctity Necklace",
         waist="Patentia Sash",
         left_ear="Hearty Earring",
-        right_ear="Phawaylla Earring",
+        right_ear="Alabaster Earring",
         left_ring="Defending Ring",
         right_ring="Archon Ring",
-        back="Null Shawl",
+        back="Moonbeam Cape",
     }
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
@@ -312,12 +312,12 @@ function init_gear_sets()
     sets.defense.PDT = {ammo="Staunch Tathlum +1",
         head="Meghanada Visor +2",body="Meg. Cuirie +2",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Defending Ring",ring2="Warden's Ring",back="Archon Cape"}
+		ear2="Brutal Earring",ring1="Defending Ring",ring2="Warden's Ring",back=gear.da_jse_back}
 
     sets.defense.MDT = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Defending Ring",ring2="Meghanada Ring",back="Archon Cape"}
+		ear2="Brutal Earring",ring1="Defending Ring",ring2="Meghanada Ring",back=gear.da_jse_back}
 		
 	sets.defense.MEVA = {ammo="Staunch Tathlum +1",
 		head=gear.herculean_fc_head,neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
@@ -331,19 +331,19 @@ function init_gear_sets()
 
     -- Normal melee group
     sets.engaged = {
-        ammo="Aqreqaq Bomblet",
+        ammo="Voluspa Tathlum",
         head="Malignance Chapeau",
         body="Volte Harness",
         hands="Mummu Wrists +2",
         legs="Pill. Culottes +4",
         feet="Plun. Poulaines +4",
-        neck="Sanctity Necklace",
+        neck="Null Loop",
         waist="Patentia Sash",
         left_ear="Sherida Earring",
         right_ear="Odr Earring",
         left_ring="Rajas Ring",
         right_ring="Mummu Ring",
-        back="Null Shawl",}
+        back=gear.da_jse_back,}
 		
     sets.engaged.SomeAcc = {ammo="Aurgelmir Orb +1",
         head="Dampening Tam",neck="Erudit. Necklace",ear1="Brutal Earring",ear2="Mache Earring +1",
