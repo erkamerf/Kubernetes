@@ -340,7 +340,7 @@ function init_gear_sets()
         neck="Null Loop",
         waist="Patentia Sash",
         left_ear="Sherida Earring",
-        right_ear="Odr Earring",
+        right_ear="Cessance Earring",
         left_ring="Rajas Ring",
         right_ring="Mummu Ring",
         back=gear.da_jse_back,}
