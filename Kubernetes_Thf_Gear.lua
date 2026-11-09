@@ -64,7 +64,7 @@ function init_gear_sets()
 	sets.buff.Sleep = {head="Frenzy Sallet"}
 	
     sets.buff['Sneak Attack'] = {}
-    sets.buff['Trick Attack'] = {}
+    sets.buff['Trick Attack'] = {body="Plunderer's Vest +4"}
 
     -- Extra Melee sets.  Apply these on top of melee sets.
     sets.Knockback = {}
@@ -73,7 +73,7 @@ function init_gear_sets()
 	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",body="Adhemar Jacket +1",hands="Floral Gauntlets",
 				ring1="Garuda Ring",waist="Reiki Yotai"}
 	sets.Parry = {hands="Turms Mittens +1",ring1="Defending Ring"}
-	sets.Ambush = {body="Plunderer's Vest +3"} 
+	sets.Ambush = {body="Plunderer's Vest +4"} 
 	
 	-- Weapons sets
 	sets.weapons.Aeneas = {main="Aeneas",sub="Shijo"}
